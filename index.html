@@ -1,0 +1,53 @@
+<html dir="rtl" lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+        <script>
+            console.log("Hello World!");
+            let weight = 75;
+            let height = 170 / 100;
+
+            const squareHeight = height * height;
+
+            const bmi = weight / squareHeight ;
+
+            console.log(`your BMI -> ${bmi}`)
+
+            console.log("hello")
+        </script>
+    </head>
+    <body>
+        <main>
+            <section id="bmi-calculator">
+                <div>
+                    <h2>محاسبهBMI, شاخص توده ی بدنی</h2>
+                    <div class="input-countainer">
+                        <div>
+                            <label for="height">قد ( سانتیمتر )</label>
+                            <input placeholder="مثال : 170" type="text" id="height">
+                        </div>
+                        <div>
+                            <label for="weight"> وزن ( کیلوگرم )</label>
+                            <input placeholder="مثال : 65" type="text" id="weight">
+                        </div>
+                        <div>
+                            <input type="radio" id="adult-check">
+                            <label for="adult-check">سن 19 سال یا بالاتر</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="teen-check">
+                            <label for="teen-check"> سن کمتر از 19 سال</label>
+                        </div>
+                    </div>
+                    <div class="btn-countainer">
+                        <button type="submit">محاسبه</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
